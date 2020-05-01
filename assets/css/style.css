@@ -1,0 +1,78 @@
+body {
+    background: url("../images/background.jpg");
+    background-size: cover;
+    min-width: 960px;
+    margin: auto;
+}
+
+/* * {
+    box-sizing: border-box;
+} */
+
+#header {
+    color: #eeeeee;
+    font-size: 30px;
+    font-weight: bolder;
+    padding: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: #c15f27;
+}
+
+#instructions {
+    color: #0f8913;
+    font-weight: bold;
+    padding: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: #ffdaa2;
+}
+
+#number {
+    color: #602605;
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-top: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: #0ea777;
+}
+
+#results {
+    font-weight: bold;
+    padding-left: 20px;
+    padding-top: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: #00e2d3;
+}
+
+.choices {
+    background-color: #eeeeee;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.total {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#line {
+    background-color: #00877e;
+    font-weight: bold;
+    color: #eeeeee;
+    padding: 10px;
+}
+
+#scorenumber {
+    background-color: #00877e;
+    font-weight: bold;
+    color: #eeeeee;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 30px;
+}
