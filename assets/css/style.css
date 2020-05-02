@@ -11,40 +11,46 @@ body {
 
 #header {
     color: #eeeeee;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bolder;
-    padding: 20px;
+    padding: 10px;
     margin-left: 10px;
     margin-top: 10px;
+    width: 310px;
     background-color: #c15f27;
 }
 
 #instructions {
     color: #0f8913;
+    font-size: 20px;
     font-weight: bold;
-    padding: 20px;
+    padding: 10px;
     margin-left: 10px;
     margin-top: 10px;
+    width: 630px;
     background-color: #ffdaa2;
 }
 
 #number {
-    color: #602605;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
-    padding-left: 20px;
-    padding-top: 10px;
+    padding: 10px;
     margin-left: 10px;
     margin-top: 10px;
+    width: 400px;
+    height: 100px;
     background-color: #0ea777;
 }
 
 #results {
+    font-size: 20px;
     font-weight: bold;
     padding-left: 20px;
-    padding-top: 10px;
+    padding: 10px;
     margin-left: 10px;
     margin-top: 10px;
+    width: 230px;
+    height: 100px;
     background-color: #00e2d3;
 }
 
@@ -59,9 +65,11 @@ body {
     margin-left: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
+    width: 400px;
 }
 
 #line {
+    font-size: 20px;
     background-color: #00877e;
     font-weight: bold;
     color: #eeeeee;
@@ -69,10 +77,11 @@ body {
 }
 
 #scorenumber {
+    font-size: 40px;
     background-color: #00877e;
     font-weight: bold;
     color: #eeeeee;
     margin-top: 10px;
     padding: 10px;
-    font-size: 30px;
+    height: 100px;
 }
