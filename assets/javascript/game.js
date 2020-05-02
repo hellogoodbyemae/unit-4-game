@@ -1,19 +1,15 @@
 $(document).ready(function() {
 
-    var crys1;
-    var crys2;
-    var crys3;
-    var crys4;
     var compScore;
     var userScore = 0;
     var wins = 0;
     var losses = 0;
+    var crystals = ["crys1", "crys2", "crys3", "crys4"];
 
     function reset() {
-        crys1 = Math.floor(Math.random() * 11 + 1);
-        crys2 = Math.floor(Math.random() * 11 + 1);
-        crys3 = Math.floor(Math.random() * 11 + 1);
-        crys4 = Math.floor(Math.random() * 11 + 1);
+        for(var i = 0; i < crystals.length; i++) {
+            crystals[i].setAttribute("score", Math.floor(Math.random() * 11 + 1))
+        }   
         compScore = Math.floor(Math.random() * 101 + 19);
         userScore = 0;
         $("#scorenumber").text(userScore);
@@ -21,15 +17,23 @@ $(document).ready(function() {
     }
 
     function start() {
-        crys1 = Math.floor(Math.random() * 11 + 1);
-        crys2 = Math.floor(Math.random() * 11 + 1);
-        crys3 = Math.floor(Math.random() * 11 + 1);
-        crys4 = Math.floor(Math.random() * 11 + 1);
+        crystals = document.getElementsByTagName("img")
+        for(var i = 0; i < crystals.length; i++) {
+            crystals[i].setAttribute("score", Math.floor(Math.random() * 11 + 1))
+            crystals[i].addEventListener("click", (args) => {
+                value = Math.round(args.target.getAttribute("score"))
+                userScore = userScore + value;
+                $("#number").text(userScore);
+                console.log(userScore);
+                game();
+            })
+        }
         compScore = Math.floor(Math.random() * 101 + 19);
-        $("#number").text(compScore);
+        $("#number").text(compGuess);
         $("#wins").text(wins);
         $("#losses").text(losses);
         $("#scorenumber").text(userScore);
+    
     }
 
     function game() {
