@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    var compScore;
+    var compScore = 0;
     var userScore = 0;
     var wins = 0;
     var losses = 0;
@@ -41,45 +41,19 @@ $(document).ready(function() {
             alert("Winner!");
             reset();
             wins++;
-            $("#wins").text(wins);
+            $("#wins").text("Wins: " + wins);
+            $("#scorenumber").text(wins);
         }
 
         else if (userScore > compScore) {
             alert("Better Luck Next Time!");
             reset();
             losses++;
-            $("#losses").text(losses);
+            $("#losses").text("Losses: " + losses);
         }
+
     }
 
     start();
-
-    $("#red").on("click", function () {
-        userScore = userScore + crys1;
-        $("#scorenumber").text(userScore);
-        console.log(userScore);
-        game();
-    })
-
-    $("#blue").on("click", function () {
-        userScore = userScore + crys2;
-        $("#scorenumber").text(userScore);
-        console.log(userScore);
-        game();
-    })
-
-    $("#yellow").on("click", function () {
-        userScore = userScore + crys3;
-        $("#scorenumber").text(userScore);
-        console.log(userScore);
-        game();
-    })
-
-    $("#green").on("click", function () {
-        userScore = userScore + crys4;
-        $("#scorenumber").text(userScore);
-        console.log(userScore);
-        game();
-    })
 
 });
