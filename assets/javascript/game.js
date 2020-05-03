@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    var compScore = 0;
+    var compScore = Math.floor(Math.random() * 101 + 19);
     var userScore = 0;
     var wins = 0;
     var losses = 0;
@@ -8,7 +8,9 @@ $(document).ready(function() {
 
     function reset() {
         for(var i = 0; i < crystals.length; i++) {
-            crystals[i].setAttribute("score", Math.floor(Math.random() * 11 + 1))
+            crystals[i].setAttribute("score", Math.floor(Math.random() * 11 + 1)) - javascript
+            // var crystals[i] = $("score", Math.floor(Math.random() * 11 + 1);
+            // )
         }   
         compScore = Math.floor(Math.random() * 101 + 19);
         userScore = 0;
@@ -18,9 +20,14 @@ $(document).ready(function() {
 
     function start() {
         crystals = document.getElementsByTagName("img")
+        
         for(var i = 0; i < crystals.length; i++) {
             crystals[i].setAttribute("score", Math.floor(Math.random() * 11 + 1))
+            // var crystals[i] = $("score", Math.floor(Math.random() * 11 + 1)
+            // )
+
             crystals[i].addEventListener("click", (args) => {
+            // $("#img").click(function) {
                 value = Math.round(args.target.getAttribute("score"))
                 userScore = userScore + value;
                 $("#number").text(userScore);
